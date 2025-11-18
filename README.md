@@ -73,7 +73,7 @@ Check movie showtimes in cinemas in Finland.
 
 ## 🗄️ Database Structure
 
-![Database Structure](movieverse-frontend/src/assest/Database_Structure.png)ng)
+![Database Structure](movieverse-frontend/src/assest/Database_Structure.png)
 
 ### Tables:
 
@@ -134,4 +134,6 @@ npm devStart
 
 ---
 
-## 🌐 Website Link https://movieverse-zeta.vercel.app/
+## 🌐 Website Link 
+
+https://movieverse-zeta.vercel.app/
