@@ -17,7 +17,7 @@ const Navbar = ({
   const [query, setQuery] = useState("");
   const { user } = useUser();
   const navigate = useNavigate();
-  const url = `${process.env.REACT_APP_API}api/groups`;
+  const url = `${process.env.REACT_APP_BACKEND_API}api/groups`;
 
   const handleSearch = () => {
     if (query.trim()) {
@@ -60,7 +60,11 @@ const Navbar = ({
           <Link to="/" className="nav-link" onClick={handleLinkClick}>
             HOME
           </Link>
-          <Link to="/select-movies" className="nav-link" onClick={handleLinkClick}>
+          <Link
+            to="/select-movies"
+            className="nav-link"
+            onClick={handleLinkClick}
+          >
             EXPLORE
           </Link>
           <Link to="/show-time" className="nav-link" onClick={handleLinkClick}>
@@ -68,7 +72,11 @@ const Navbar = ({
           </Link>
           {!user.isAuthenticated ? (
             <>
-              <Link to="/favorites" className="nav-link" onClick={handleLinkClick}>
+              <Link
+                to="/favorites"
+                className="nav-link"
+                onClick={handleLinkClick}
+              >
                 FAVOURITE
               </Link>
               <Link to="/groups" className="nav-link" onClick={handleLinkClick}>
@@ -77,10 +85,18 @@ const Navbar = ({
             </>
           ) : (
             <>
-              <Link to={`/${user.profileUrl}/favorites`} className="nav-link" onClick={handleLinkClick}>
+              <Link
+                to={`/${user.profileUrl}/favorites`}
+                className="nav-link"
+                onClick={handleLinkClick}
+              >
                 FAVOURITES
               </Link>
-              <Link to={`/${user.profileUrl}/groups`} className="nav-link" onClick={handleLinkClick}>
+              <Link
+                to={`/${user.profileUrl}/groups`}
+                className="nav-link"
+                onClick={handleLinkClick}
+              >
                 GROUPS
               </Link>
             </>
@@ -116,7 +132,11 @@ const Navbar = ({
               closeHamburgerMenu={() => setIsMenuOpen(false)}
             />
           ) : (
-            <Link to="/authentication" className="signin-link" onClick={handleLinkClick}>
+            <Link
+              to="/authentication"
+              className="signin-link"
+              onClick={handleLinkClick}
+            >
               Sign In
             </Link>
           )}

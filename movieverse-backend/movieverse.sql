@@ -8,7 +8,7 @@ CREATE TABLE account (
     password VARCHAR(50) NOT NULL,
     is_active BOOLEAN NOT NULL DEFAULT TRUE,
     first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL
+    last_name VARCHAR(50) NOT NULL,
     link VARCHAR(255) NOT NULL
 );
 ALTER TABLE account
@@ -90,7 +90,7 @@ CREATE TABLE notification (
     status VARCHAR(50) DEFAULT 'unread', 
     created_at TIMESTAMP DEFAULT NOW(),
     type VARCHAR(50) NOT NULL DEFAULT 'join_request',  
-    action_status VARCHAR(50) DEFAULT NULL;         
+    action_status VARCHAR(50) DEFAULT NULL,         
     CONSTRAINT notification_sender_fk FOREIGN KEY (sender_id) REFERENCES account(id),
     CONSTRAINT notification_receiver_fk FOREIGN KEY (receiver_id) REFERENCES account(id),
     CONSTRAINT notification_group_fk FOREIGN KEY (group_id) REFERENCES movie_group(id)

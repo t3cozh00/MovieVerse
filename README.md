@@ -1,11 +1,9 @@
-
 ![Homepage Screenshot](movieverse-frontend/src/assest/CoverR.jpg)
-
-
 
 # 🎬 **MovieVerse**
 
 ## Table of Contents
+
 1. About
 2. Key Features
 3. Technologies Used
@@ -26,23 +24,27 @@
 ## ⭐ Key Features
 
 ### Extensive Database
+
 Browse a wide catalog of movies, each with:
+
 - **Description**
 - **Rating**
 - **Trailer**
 - **Cast Details**
 - **User Reviews**
-  
+
 Search and select movies with different criteria.
 
 Check movie showtimes in cinemas in Finland.
 
 ### User Profiles
+
 - **Create favorites lists** and share them.
 - **Customizing groups** of movie enthusiasts with similar interests.
 - **User account management** of signing up/in and removing user account.
 
 ### Optional features
+
 - **Like reviews** and sort reviews by date and likes.
 - **Edit user information** to keep updated.
 - **Notifications** of user sending request to join groups and receiving reponse from group admins.
@@ -71,6 +73,10 @@ Check movie showtimes in cinemas in Finland.
 
 ## 🗄️ Database Structure
 
+(movieverse-frontend/src/assest/Database_Structure.png)
+
+### Tables:
+
 - **Account**: Stores user credentials and profile information.
 - **Review**: Links user reviews to movies.
 - **Favourite**: Tracks users' favorite movies.
@@ -90,8 +96,6 @@ Check movie showtimes in cinemas in Finland.
 - **User Profile**: Manage account settings.
 - **Groups Page**: View, manage, create groups, and send join request.
 - **Group detail Page**: Post, user leaves groups, and group admin removes member(s).
-
-  
 - **Responsiveness**:
 
 Desktop View
@@ -105,13 +109,12 @@ Mobile View
   <img src="movieverse-frontend/src/assest/MObvire1.jpeg" alt="Mobile View 2" width="200px">
 </div>
 
-
-
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - **Node.js**
 - **Git**
 - **npm**
@@ -120,7 +123,7 @@ Mobile View
 
 Clone the repository:
 
-git clone https://github.com/MovieVerse-2024Autumn/MovieVerse-AWAP-Repo-2024Autumn 
+git clone https://github.com/t3cozh00/MovieVerse.git
 
 cd movieverse-backend
 
@@ -130,8 +133,4 @@ npm devStart
 
 ### 🌐 Website Link
 
-- **Frontend**: https://mango-moss-05ef74d10.4.azurestaticapps.net
-- **Backend**: https://movieverse-backend-8oqu.onrender.com
-
-
-
+https://movieverse-zeta.vercel.app/
