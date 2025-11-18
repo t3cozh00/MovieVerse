@@ -73,17 +73,18 @@ Check movie showtimes in cinemas in Finland.
 
 ## 🗄️ Database Structure
 
-(movieverse-frontend/src/assest/Database_Structure.png)
+![Database Structure](movieverse-frontend/src/assest/Database_Structure.png)ng)
 
 ### Tables:
 
-- **Account**: Stores user credentials and profile information.
-- **Review**: Links user reviews to movies.
-- **Favourite**: Tracks users' favorite movies.
-- **Group Member**: Manages group memberships.
-- **Movie Group**: Stores information about user-created groups.
-- **Group Post**: Holds posts within groups.
-- **Notification**: Manages notifications for group join requests and responses.
+- **account** – Stores user credentials and profile information  
+  _(email, hashed password, first/last name, active flag, profile link, etc.)_
+- **review** – User reviews for movies, including rating, title, text, review date, poster path and like count.
+- **favourite** – Junction table between `account` and movies, storing each user’s favourite movie list.
+- **movie_group** – User-created movie groups, including group name, description and admin (owner).
+- **group_member** – Memberships of users in groups, including status (`accepted / declined / pending`) and admin id.
+- **groupposts** – Posts made inside groups (text content + optional movie info like title and poster).
+- **notification** – Notifications related to group join requests and admin responses, with type and read status.
 
 ---
 
@@ -131,6 +132,6 @@ npm install
 
 npm devStart
 
-### 🌐 Website Link
+---
 
-https://movieverse-zeta.vercel.app/
+## 🌐 Website Link https://movieverse-zeta.vercel.app/
